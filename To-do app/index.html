@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus OS | Task Architecture</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="glass-wall">
+        <header class="hero-dashboard">
+            <div class="clock-section">
+                <h2 id="live-clock">00:00:00</h2>
+                <p id="live-date">Loading Chronos...</p>
+            </div>
+            <div class="status-badge">
+                <div class="dot"></div> System Active
+            </div>
+        </header>
+
+        <section class="task-input-zone">
+            <form id="nexus-form">
+                <div class="main-row">
+                    <select id="emoji-picker">
+                        <option value="🎯">🎯 Focus</option>
+                        <option value="💻">💻 Code</option>
+                        <option value="🔥">🔥 Urgent</option>
+                        <option value="🌿">🌿 Wellness</option>
+                    </select>
+                    <input type="text" id="task-name" placeholder="What is the objective?" required>
+                </div>
+                
+                <div class="selector-row">
+                    <div class="input-field">
+                        <label>Target Date</label>
+                        <input type="date" id="task-date" required>
+                    </div>
+                    <div class="input-field">
+                        <label>Target Time</label>
+                        <input type="time" id="task-time" required>
+                    </div>
+                    <button type="submit" id="add-btn">Execute</button>
+                </div>
+            </form>
+        </section>
+
+        <div class="task-feed">
+            <div class="feed-header">
+                <h3>Active Nodes</h3>
+                <span id="stats-counter">0 Tasks</span>
+            </div>
+            <ul id="task-render-engine"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
