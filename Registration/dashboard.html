@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <style>
+        body{
+            background:#0f172a;
+            color:white;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+            font-family:Segoe UI;
+        }
+
+        .card{
+            padding:40px;
+            border-radius:20px;
+            background:rgba(255,255,255,0.1);
+            backdrop-filter:blur(15px);
+            text-align:center;
+        }
+
+        button{
+            padding:12px 20px;
+            border:none;
+            border-radius:10px;
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h1>Welcome User 🎉</h1>
+    <p>You have logged in successfully</p>
+    <button onclick="logout()">Logout</button>
+</div>
+
+<script>
+function logout(){
+    localStorage.removeItem("user");
+    window.location.href = "index.html";
+}
+</script>
+
+</body>
+</html>
