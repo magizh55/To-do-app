@@ -122,4 +122,4 @@ Possible upgrades:
 
 ## 👨‍💻 Author
 
-Developed by **Magizh**
+Developed by Magizh
