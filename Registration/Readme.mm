@@ -45,20 +45,6 @@ modern-login-system/
 
 ---
 
-## 🚀 How to Run
-
-1. Download or clone the project
-
-```bash
-git clone https://github.com/your-username/modern-login-system.git
-```
-
-2. Open the project folder
-
-3. Run `index.html` in browser
-
----
-
 ## 🔐 Default Demo Credentials
 
 Use these credentials for login:
